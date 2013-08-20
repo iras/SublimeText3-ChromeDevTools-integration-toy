@@ -31,23 +31,17 @@ An automatic notification to Growl has also been kept (debugging purposes mainly
 Once all work fine, an extra instance of the Chrome app gets created bringing up the desired web page. Such extra instance doesn't seem to affect the main Chrome app instance that can be called by clicking on the Chrome dock's icon as usual.
 
 Dependencies :
-	websocket-client 0.11        https://pypi.python.org/pypi/websocket-client/    (Python 2.7)
-	GrowlNotify 2.0  (OPTIONAL)  http://growl.info/downloads                       (MacOSX app)
+        i.  [websocket-client 0.11](https://pypi.python.org/pypi/websocket-client/) (Python 2.7)
+        ii. [GrowlNotify 2.0](http://growl.info/downloads) (MacOSX app) (OPTIONAL)
 
 Scripts locations :
-	The 1st-part script chrometabrefresherplugin.py needs to be dropped
-	into ~/Library/Application Support/Sublime Text 3/Packages/User/
-	The filename of the local html page you want to be refreshed needs to
-	be amended at the bottom of the other script chrometabrefresherST3.py
+i.  The 1st-part script chrometabrefresherplugin.py needs to be dropped into ~/Library/Application Support/Sublime Text 3/Packages/User/ The 2nd-part script can be placed anywhere you want. I put it on the Desktop. 
+ii. The filename of the local html page you want to be automatically refreshed needs to be amended at the bottom of the other script chrometabrefresherST3.py
 
-Basic know-how (thanks guys!) :
-	https://github.com/flxfxp/My-Stuff/blob/master/Sublime%20Text%202/Plugins/growlnotifier.py
-	http://stackoverflow.com/questions/11344414/windows-chrome-refresh-tab-0or-current-tab-via-command-line
+Basic know-how (thanks guys!) : [i.](https://github.com/flxfxp/My-Stuff/blob/master/Sublime%20Text%202/Plugins/growlnotifier.py) and [ii.](http://stackoverflow.com/questions/11344414/windows-chrome-refresh-tab-0or-current-tab-via-command-line)
 
-Optional know-how for developing the plugin further :
-	http://www.macdrifter.com/2012/08/making-a-sublime-text-plugin-markdown-reference-viewer.html
-	http://net.tutsplus.com/tutorials/python-tutorials/how-to-create-a-sublime-text-2-plugin/
-	http://sublimetext.info/docs/en/extensibility/plugins.html
+Optional know-how for developing the plugin further : [i.](http://www.macdrifter.com/2012/08/making-a-sublime-text-plugin-markdown-reference-viewer.html)  [ii.](http://net.tutsplus.com/tutorials/python-tutorials/how-to-create-a-sublime-text-2-plugin/)
+ and  [iii.] (http://sublimetext.info/docs/en/extensibility/plugins.html)
 
 (*) Notice that SublimeText3 now uses Python 3.3 (ST2 used to use Python 2.6 instead)
 
