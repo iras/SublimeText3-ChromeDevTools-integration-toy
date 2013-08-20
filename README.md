@@ -8,6 +8,7 @@ This toy plugin performs the automatic refresh of targeted Chrome tab(s) upon pr
 The plugin's workflow is drawn below (MacOS X environment).
 
 
+
                  ST3 plugin
 
                       |
@@ -18,9 +19,10 @@ The plugin's workflow is drawn below (MacOS X environment).
                       |                             |
                       v                             v
 
-			         ChromeDevsTools                 GrowlNotify
-			         Remote Debugger      (could be Apple Notification Center.
-                                    I haven't tried that one out yet)
+               ChromeDevsTools                 GrowlNotify
+               Remote Debugger      (could be Apple Notification Center.
+                                     I haven't tried that one out yet)
+
 
 
 This 1st part of the plugin (chrometabrefresherplugin.py) calls an external (2nd part) standalone python script on saving (chrometabrefresherST3.py). The 2nd part then talks to the Chrome's Remote Debugger. The 2nd part script could've been fitted into the 1st part script except that adding an external library (websocket-client) inside of a SublimeText plugin could be somehow a bit of a pain as suggested here http://www.sublimetext.com/forum/viewtopic.php?f=2&t=5835
