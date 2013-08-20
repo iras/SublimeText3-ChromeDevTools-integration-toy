@@ -13,7 +13,7 @@ The plugin's workflow is drawn below (MacOS X environment).
                       |
                       +-----------------------------+
                       |                             |
-		                  |                         (OPTIONAL)
+                      |                         (OPTIONAL)
                    handles               sends notification out to
                       |                             |
                       v                             v
